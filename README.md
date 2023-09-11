@@ -82,3 +82,5 @@ Use the supplied sql scripts in GitHub Actions like this:
 * Create a Kanban board
 * Share your application links in the feedback system. Watch out for the notification email.
 * Please commit your final submission by **16h00**.
+* 
+[![Node.js CI with PostgreSQL](https://github.com/Horizyn77/Restaurant-Booking-System/actions/workflows/node-pgsql.js.yml/badge.svg)](https://github.com/Horizyn77/Restaurant-Booking-System/actions/workflows/node-pgsql.js.yml)
