@@ -1,0 +1,30 @@
+<h1 class="title is-2" >User Bookings</h1>
+
+<form action="/cancel" method="POST">
+
+
+<table class="table is-fullwidth" >
+    <tr>
+        <th>Table name</th>
+        <th>Table capacity</th>
+        <th>Booking size</th>
+        <th>Booked by</th>
+        <th>Contact number</th>
+        <th></th>
+    </tr>
+
+
+    {{#each tables}}
+    <tr>
+        <td>{{this.table_name}}</td>
+        <td>{{this.capacity}}</td>
+        <td>{{this.number_of_people}}</td>
+        <td>{{this.username}}</td>
+        <td>{{this.contact_number}}</td>
+        <td>
+            <button class="button is-warning" type="submit" name="tableId" value="{{this.id}}">Cancel booking</button>
+        </td>
+    </tr>
+    {{/each}}
+    </table>
+    </form>
